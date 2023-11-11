@@ -15,7 +15,7 @@
   </head>
   <body>
     <!--Header / Top Line-->
-    <header class="container top-line">
+     <header class="container top-line">
       <div class="header-logo-container">
         <h4>
           <a class="header-logo" href="index.html"
@@ -26,10 +26,10 @@
       <nav class="main-header">
         <ul class="main main-header-menu">
           <li class="main-header-menu-list">
-            <a class="main-header-menu-list-items" href="index.html">Studio</a>
+            <a class="main-header-menu-list-items active" href="index.html">Studio</a>
           </li>
           <li class="main-header-menu-list">
-            <a class="main-header-menu-list-items active" href="portfolio.html"
+            <a class="main-header-menu-list-items" href="portfolio.html"
               >Portfolio</a
             >
           </li>
@@ -54,7 +54,13 @@
           </li>
         </ul>
       </div>
+
+       <div class="menu-icon" onclick="toggleMenu()">
+    <svg class="icon-menu" >
+                      <use xlink:href="images/icons.svg#icon-menu"></use></svg>
+  </div>
     </header>
+
     <!--Filter Section-->
     <section class="container filter">
       <ul class="filter-list">
@@ -228,9 +234,9 @@
     </section>
 
    <!--Footer/ Bottom Line-->
-     <footer class="container footer">
-      <div class="footer-items">
-          <h4><a class="footer-logo" href="index.html"><span class="logo">WEB</span>STUDIO</a></h4>
+      <footer class="container footer">
+      <div class="footer-items footer-text">
+          <h4><a class="footer-logo" href="index.html"><span class="logo-footer">WEB</span>STUDIO</a></h4>
           <p class="footer-info">
              Increase the flow of customers and <br />
              sales for your business with digital <br />
@@ -239,7 +245,7 @@
          
       </div>
 
-      <div class="footer-items">
+      <div class="footer-items social">
           <h4 class="footer-social">Social Media</h4> 
         <div class="icon-footer">
                 <a class="icon-link" href="https://www.instagram.com/" target="_blank">
@@ -289,7 +295,7 @@
           <input class="footer-input" type="text" id="email-subs" name="email-subs" placeholder="Your Email" />
         </label>
 
-         <button type="button" class="subscribe-button" >
+         <button type="submit" class="subscribe-button" >
         <span class="label-subs">Subscribe</span>
         <svg class="icon-footer-send">
           <use xlink:href="images/icons.svg#icon-send"></use></svg>
@@ -297,7 +303,6 @@
        </div>
       </div>
       
-       
       
     </footer>
     <script src="./js/modal.js"></script>
